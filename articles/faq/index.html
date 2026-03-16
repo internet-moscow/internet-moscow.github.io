@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Часто задаваемые вопросы — VPNUS VPN</title>
+<meta content="Ответы на популярные вопросы о VPNUS. Как подключить VPN, какие устройства поддерживаются, как оплатить и многое другое." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --primary: #1a1a2e; --accent: #4f46e5; --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.7; background: #ffffff; }
+    .header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+    .header-inner { max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; text-decoration: none; color: var(--primary); }
+    .logo span { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .nav { display: flex; gap: 32px; }
+    .nav a { text-decoration: none; color: #64748b; font-weight: 500; font-size: 0.9375rem; transition: color 0.2s; }
+    .nav a:hover { color: var(--primary); }
+    .header-cta { display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; background: var(--gradient); color: white; text-decoration: none; border-radius: 10px; font-weight: 600; font-size: 0.9375rem; transition: all 0.2s; box-shadow: 0 4px 14px rgba(102, 126, 234, 0.39); }
+    .header-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5); }
+    .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+    .mobile-menu-btn span { display: block; width: 24px; height: 2px; background: var(--primary); margin: 5px 0; }
+    
+    .faq-page { padding: 120px 24px 80px; max-width: 800px; margin: 0 auto; }
+    .faq-header { text-align: center; margin-bottom: 64px; }
+    .faq-header h1 { font-size: 3rem; font-weight: 700; letter-spacing: -0.03em; color: var(--primary); margin-bottom: 16px; }
+    .faq-header p { font-size: 1.25rem; color: #64748b; }
+    
+    .faq-item { border-bottom: 1px solid #e2e8f0; padding: 32px 0; }
+    .faq-item:first-child { padding-top: 0; }
+    .faq-item h3 { font-size: 1.25rem; font-weight: 600; color: var(--primary); margin-bottom: 16px; display: flex; align-items: flex-start; gap: 16px; }
+    .faq-item h3::before { content: 'Q'; width: 32px; height: 32px; background: var(--gradient); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 700; flex-shrink: 0; }
+    .faq-item p { color: #475569; font-size: 1.0625rem; line-height: 1.8; padding-left: 48px; }
+    .faq-item ul { padding-left: 64px; margin-top: 12px; }
+    .faq-item li { color: #475569; margin-bottom: 8px; }
+    .faq-item a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .faq-item a:hover { text-decoration: underline; }
+    
+    .cta-box { padding: 48px; background: var(--gradient); border-radius: 24px; margin-top: 64px; text-align: center; color: white; }
+    .cta-box h2 { font-size: 2rem; font-weight: 700; margin-bottom: 16px; }
+    .cta-box p { font-size: 1.125rem; margin-bottom: 32px; color: rgba(255,255,255,0.9); }
+    .cta-box .btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: white; color: var(--primary); text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 1.125rem; transition: all 0.2s; }
+    .cta-box .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    
+    .footer { padding: 64px 24px 32px; background: var(--primary); color: white; margin-top: 80px; }
+    .footer-inner { max-width: 1280px; margin: 0 auto; }
+    .footer-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 48px; flex-wrap: wrap; gap: 32px; }
+    .footer-brand { max-width: 300px; }
+    .footer-brand .logo { color: white; margin-bottom: 16px; display: inline-block; }
+    .footer-brand p { color: #94a3b8; font-size: 0.9375rem; }
+    .footer-links { display: flex; gap: 64px; }
+    .footer-column h4 { font-size: 0.875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: #94a3b8; margin-bottom: 16px; }
+    .footer-column ul { list-style: none; }
+    .footer-column li { margin-bottom: 10px; }
+    .footer-column a { color: #cbd5e1; text-decoration: none; font-size: 0.9375rem; transition: color 0.2s; }
+    .footer-column a:hover { color: white; }
+    .footer-bottom { padding-top: 32px; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+    .footer-bottom p { color: #64748b; font-size: 0.875rem; }
+    
+    @media (max-width: 768px) {
+      .nav { display: none; }
+      .mobile-menu-btn { display: block; }
+      .faq-page { padding: 100px 20px 60px; }
+      .faq-header h1 { font-size: 2rem; }
+      .faq-item h3 { font-size: 1.125rem; }
+      .faq-item p { padding-left: 0; }
+      .faq-item ul { padding-left: 20px; }
+      .cta-box { padding: 32px 24px; }
+      .cta-box h2 { font-size: 1.5rem; }
+      .footer-top { flex-direction: column; }
+      .footer-links { flex-direction: column; gap: 32px; }
+    }
+  </style>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><meta content="#0a0a0a" name="theme-color"/><meta content="ru_RU" property="og:locale"/><meta content="https://internet-moscow.github.io/articles/faq/" property="og:url"/><meta content="https://internet-moscow.github.io/favicon-120.png" property="og:image"/><meta content="https://internet-moscow.github.io/favicon-120.png" name="twitter:image"/><link href="https://internet-moscow.github.io/articles/faq/" rel="canonical"/><link href="/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/favicon.ico" rel="shortcut icon"/><link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon"/><link href="/site.webmanifest" rel="manifest"/><!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107722497', 'ym');
+
+    ym(107722497, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<!-- /Yandex.Metrika counter --><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "name": "Часто задаваемые вопросы — VPNUS VPN", "headline": "Часто задаваемые вопросы", "description": "Ответы на популярные вопросы о VPNUS. Как подключить VPN, какие устройства поддерживаются, как оплатить и многое другое.", "url": "https://internet-moscow.github.io/articles/faq//", "inLanguage": "ru-RU", "dateModified": "2026-03-16", "publisher": {"@type": "Organization", "name": "VPNUS VPN", "url": "https://internet-moscow.github.io/"}}</script></head>
+<body><!-- Yandex.Metrika counter (noscript) -->
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/107722497" style="position:absolute; left:-9999px;"/></div></noscript>
+<!-- /Yandex.Metrika counter (noscript) -->
+<header class="header">
+<div class="header-inner">
+<a class="logo" href="/"><span>VPNUS</span> VPN</a>
+<nav class="nav">
+<a href="/#features">Возможности</a>
+<a href="/#pricing">Цены</a>
+<a href="/#articles">Статьи</a>
+<a href="/articles/faq/">FAQ</a>
+</nav>
+<a class="header-cta" href="https://t.me/vpnusvpn_bot?start=invite_246079" target="_blank">Подключить VPN</a>
+<button class="mobile-menu-btn"><span></span><span></span><span></span></button>
+</div>
+</header>
+<main class="faq-page">
+<header class="faq-header">
+<h1>Часто задаваемые вопросы</h1>
+<p>Ответы на популярные вопросы о VPNUS VPN</p>
+</header>
+<div class="faq-list">
+<div class="faq-item">
+<h3>Что такое VPNUS?</h3>
+<p>VPNUS — это быстрый и надежный VPN-сервис для доступа к заблокированным сайтам и защиты вашей приватности в интернете. Мы предлагаем 15+ серверных локаций, скорость до 40 Гбит/с и стабильную работу на мобильных сетях.</p>
+</div>
+<div class="faq-item">
+<h3>Как подключить VPNUS?</h3>
+<p>Подключение занимает менее 2 минут:</p>
+<ul>
+<li>Перейдите в Telegram бот <a href="https://t.me/vpnusvpn_bot?start=invite_246079" target="_blank">@vpnusvpn_bot</a></li>
+<li>Нажмите "Start" и следуйте инструкциям</li>
+<li>Получите конфигурацию для вашего устройства</li>
+<li>Установите приложение WireGuard (рекомендуется)</li>
+<li>Импортируйте конфигурацию и подключитесь</li>
+</ul>
+</div>
+<div class="faq-item">
+<h3>Сколько стоит подписка?</h3>
+<p>Стоимость подписки — 199₽ в месяц. В эту цену входит:</p>
+<ul>
+<li>До 3 устройств одновременно</li>
+<li>Доступ ко всем 15+ серверам</li>
+<li>Безлимитный трафик</li>
+<li>Поддержка 24/7</li>
+</ul>
+</div>
+<div class="faq-item">
+<h3>Есть ли бесплатный пробный период?</h3>
+<p>Да! Мы предоставляем 7 дней бесплатного использования с полным доступом ко всем функциям. Это позволяет протестировать сервис перед покупкой без каких-либо обязательств.</p>
+</div>
+<div class="faq-item">
+<h3>На каких устройствах работает VPNUS?</h3>
+<p>VPNUS работает на всех популярных платформах:</p>
+<ul>
+<li>iOS (iPhone, iPad)</li>
+<li>Android (смартфоны и планшеты)</li>
+<li>Windows (7, 8, 10, 11)</li>
+<li>macOS</li>
+<li>Linux</li>
+<li>Роутеры (с поддержкой WireGuard)</li>
+</ul>
+</div>
+<div class="faq-item">
+<h3>Какие способы оплаты доступны?</h3>
+<p>Оплата производится через Telegram бот. Доступные способы:</p>
+<ul>
+<li>Банковская карта (РФ)</li>
+<li>ЮKassa</li>
+<li>Криптовалюта (по запросу)</li>
+</ul>
+</div>
+<div class="faq-item">
+<h3>Будет ли работать YouTube?</h3>
+<p>Да, VPNUS полностью разблокирует доступ к YouTube. Вы сможете смотреть видео в высоком качестве (включая 4K) без буферизации благодаря высокой скорости наших серверов.</p>
+</div>
+<div class="faq-item">
+<h3>Сохраняете ли вы логи?</h3>
+<p>Нет, мы не храним логи активности пользователей. VPNUS работает по политике no-logs — мы не записываем, какие сайты вы посещаете и какие данные передаете.</p>
+</div>
+<div class="faq-item">
+<h3>Что делать, если скорость низкая?</h3>
+<p>Попробуйте следующее:</p>
+<ul>
+<li>Подключитесь к другому серверу (ближе к вашему местоположению)</li>
+<li>Смените протокол в настройках</li>
+<li>Проверьте скорость вашего интернета без VPN</li>
+<li>Обратитесь в поддержку — мы поможем оптимизировать подключение</li>
+</ul>
+</div>
+<div class="faq-item">
+<h3>Как связаться с поддержкой?</h3>
+<p>Напишите нам в Telegram бот <a href="https://t.me/vpnusvpn_bot?start=invite_246079" target="_blank">@vpnusvpn_bot</a>. Мы отвечаем круглосуточно и помогаем решить любые вопросы.</p>
+</div>
+</div>
+<div class="cta-box">
+<h2>Остались вопросы?</h2>
+<p>Напишите нам в Telegram — ответим за несколько минут</p>
+<a class="btn" href="https://t.me/vpnusvpn_bot?start=invite_246079" target="_blank">Написать в поддержку →</a>
+</div>
+</main>
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-top">
+<div class="footer-brand">
+<a class="logo" href="/"><span>VPNUS</span> VPN</a>
+<p>Быстрый и надежный VPN-сервис для свободного и безопасного интернета.</p>
+</div>
+<div class="footer-links">
+<div class="footer-column">
+<h4>Продукт</h4>
+<ul>
+<li><a href="/#features">Возможности</a></li>
+<li><a href="/#pricing">Цены</a></li>
+<li><a href="https://t.me/vpnusvpn_bot?start=invite_246079" target="_blank">Подключить</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Статьи</h4>
+<ul>
+<li><a href="/articles/youtube/">YouTube</a></li>
+<li><a href="/articles/security/">Безопасность</a></li>
+<li><a href="/articles/guides/">Гайды</a></li>
+<li><a href="/articles/faq/">FAQ</a></li>
+</ul>
+</div>
+<div class="footer-column">
+<h4>Поддержка</h4>
+<ul>
+<li><a href="https://t.me/vpnusvpn_bot?start=invite_246079" target="_blank">Telegram бот</a></li>
+<li><a href="/articles/faq/">Частые вопросы</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 VPNUS VPN. Все права защищены.</p>
+<p>Сделано с ❤️ для свободного интернета</p>
+</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>VPNUS VPN — быстрый VPN для России с обфускацией | 7 дней бесплатно</title>
+<meta content="VPNUS VPN — рабочий VPN для России с обфускацией. Обход блокировок YouTube, TikTok, Телеграм, ChatGPT, Discord. 7 дней бесплатно, потом 199 ₽/мес. WireGuard + маскировка трафика." name="description"/>
+<meta content="VPN, VPN для России, обход блокировок, WireGuard, обфускация, VPNUS, бесплатный VPN, VPN для YouTube, VPN для Телеграм, VPN для ChatGPT, VPN для Discord" name="keywords"/>
+<link href="https://internet-moscow.github.io/" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="VPNUS VPN — быстрый VPN для России с обфускацией" property="og:title"/>
+<meta content="Рабочий VPN для России. Обход блокировок, 7 дней бесплатно, 199 ₽/мес." property="og:description"/>
+<meta content="https://internet-moscow.github.io/" property="og:url"/>
+<meta content="VPNUS VPN" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="VPNUS VPN — VPN для России" name="twitter:title"/>
+<meta content="Обход блокировок с обфускацией. 7 дней бесплатно." name="twitter:description"/>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "VPNUS VPN",
+      "url": "https://internet-moscow.github.io/",
+      "description": "Быстрый VPN для России с обфускацией. Обход блокировок YouTube, TikTok, Телеграм.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://internet-moscow.github.io/articles/top/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "VPNUS VPN",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Android, iOS, Windows, macOS, Linux",
+      "offers": {
+        "@type": "Offer",
+        "price": "199",
+        "priceCurrency": "RUB",
+        "priceValidUntil": "2026-12-31"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      },
+      "description": "VPN для России с обфускацией. Обход блокировок YouTube, TikTok, Телеграм."
+    }
+    </script>
+<style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-card: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #6366f1;
+            --accent-hover: #818cf8;
+            --border: #2a2a2a;
+            --success: #22c55e;
+            --warning: #f59e0b;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        
+        header {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .logo span { color: var(--accent); }
+        
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover { color: var(--text-primary); }
+        
+        .cta-button {
+            background: var(--accent);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .hero {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--accent) 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 1px solid var(--border);
+        }
+        
+        .features {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid var(--border);
+        }
+        
+        .feature-card h3 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .feature-card p {
+            color: var(--text-secondary);
+        }
+        
+        .pricing {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .pricing h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .pricing > p {
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+        }
+        
+        .pricing-card {
+            background: var(--bg-secondary);
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 400px;
+            margin: 0 auto;
+            border: 2px solid var(--accent);
+            position: relative;
+        }
+        
+        .pricing-card::before {
+            content: "ПОПУЛЯРНОЕ";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: white;
+            padding: 0.3rem 1.5rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+        
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--success);
+            margin: 1rem 0;
+        }
+        
+        .price span {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+        
+        .pricing-features {
+            text-align: left;
+            margin: 2rem 0;
+        }
+        
+        .pricing-features li {
+            color: var(--text-secondary);
+            margin: 0.8rem 0;
+            list-style: none;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .pricing-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+        }
+        
+        .seo-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .seo-section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .seo-content {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 3rem;
+            border: 1px solid var(--border);
+        }
+        
+        .seo-content h3 {
+            color: var(--text-primary);
+            margin: 2rem 0 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .seo-content p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .articles-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .articles-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .article-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s;
+        }
+        
+        .article-card:hover {
+            border-color: var(--accent);
+        }
+        
+        .article-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        
+        .article-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .article-card .tag {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.3rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section a:hover { color: var(--accent); }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero { padding: 3rem 1.5rem; }
+            nav { display: none; }
+        }
+    </style>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><meta content="#0a0a0a" name="theme-color"/><meta content="ru_RU" property="og:locale"/><meta content="https://internet-moscow.github.io/favicon-120.png" property="og:image"/><meta content="https://internet-moscow.github.io/favicon-120.png" name="twitter:image"/><link href="/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/favicon.ico" rel="shortcut icon"/><link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon"/><link href="/site.webmanifest" rel="manifest"/><!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107722497', 'ym');
+
+    ym(107722497, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<!-- /Yandex.Metrika counter --></head>
+<body><!-- Yandex.Metrika counter (noscript) -->
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/107722497" style="position:absolute; left:-9999px;"/></div></noscript>
+<!-- /Yandex.Metrika counter (noscript) -->
+<header>
+<div class="header-container">
+<a class="logo" href="/">VPN<span>US</span></a>
+<nav>
+<a href="/">Главная</a>
+<a href="/articles/top/">Топ VPN</a>
+<a class="cta-button" href="https://t.me/vpnusvpn_bot?start=invite_246079">Подключить VPN</a>
+</nav>
+</div>
+</header>
+<section class="hero">
+<h1>VPN для России с <span>обфускацией</span></h1>
+<p>Работает даже при белых списках. Обход блокировок YouTube, TikTok, Телеграм, ChatGPT, Discord. WireGuard + маскировка трафика под обычный HTTPS.</p>
+<div class="hero-buttons">
+<a class="btn-primary" href="https://t.me/vpnusvpn_bot?start=invite_246079">7 дней бесплатно</a>
+<a class="btn-secondary" href="/articles/top/">Сравнить VPN</a>
+</div>
+</section>
+<section class="features" id="features">
+<h2>Почему VPNUS работает в России</h2>
+<div class="features-grid">
+<div class="feature-card">
+<h3>🛡️ Обфускация трафика</h3>
+<p>VPN-трафик маскируется под обычный HTTPS. DPI-системы провайдеров не распознают подключение — блокировка невозможна.</p>
+</div>
+<div class="feature-card">
+<h3>⚡ Скорость до 800 Мбит/с</h3>
+<p>Серверы с WireGuard дают максимальную скорость. Смотрите YouTube в 4K, играйте онлайн без лагов.</p>
+</div>
+<div class="feature-card">
+<h3>📱 3 устройства за 199 ₽</h3>
+<p>Одна подписка на телефон, компьютер и планшет. Android, iOS, Windows, macOS, Linux — всё работает.</p>
+</div>
+<div class="feature-card">
+<h3>🔒 No-logs политика</h3>
+<p>Не храним историю посещений, не записываем трафик, не передаем данные третьим лицам.</p>
+</div>
+<div class="feature-card">
+<h3>🇷🇺 Русская поддержка 24/7</h3>
+<p>Отвечаем в Telegram за минуты. Поможем настроить, решим любую проблему.</p>
+</div>
+<div class="feature-card">
+<h3>📺 Работает на Android TV</h3>
+<p>Смотрите заблокированные сервисы прямо на телевизоре. Простая настройка через QR-код.</p>
+</div>
+</div>
+</section>
+<section class="pricing" id="pricing">
+<h2>Простая цена, никаких сюрпризов</h2>
+<p>7 дней бесплатно. Потом 199 ₽ в месяц. Отмена в любой момент.</p>
+<div class="pricing-card">
+<h3>VPNUS VPN</h3>
+<div class="price">199 ₽<span>/мес</span></div>
+<ul class="pricing-features">
+<li>3 устройства одновременно</li>
+<li>50+ серверов в 15 странах</li>
+<li>Скорость до 800 Мбит/с</li>
+<li>Обфускация для России</li>
+<li>Kill Switch + Split Tunneling</li>
+<li>Поддержка 24/7</li>
+<li>7 дней бесплатно</li>
+</ul>
+<a class="btn-primary" href="https://t.me/vpnusvpn_bot?start=invite_246079">Подключить за 5 минут</a>
+</div>
+</section>
+<section class="seo-section">
+<h2>VPNUS VPN — ваш доступ к свободному интернету</h2>
+<div class="seo-content">
+<h3>Рабочий VPN для России в 2026 году</h3>
+<p>В 2026 году интернет в России сильно изменился. ТСПУ (технические средства противодействия угрозам) анализируют трафик на уровне провайдеров, DPI-системы блокируют VPN-подключения, а в некоторых регионах тестируются белые списки. Обычные VPN больше не работают — нужна обфускация.</p>
+<p>VPNUS VPN построен специально под эти реалии. Наша технология обфускации маскирует VPN-трафик под обычный HTTPS — DPI-системы видят обычное защищенное соединение и не блокируют его. Это позволяет обходить любые ограничения: от простых блокировок сайтов до белых списков.</p>
+<h3>Обход блокировок YouTube, TikTok, Instagram</h3>
+<p>С VPNUS VPN вы снова сможете смотреть YouTube в 4К без буферизации, пользоваться TikTok и Instagram, читать Twitter/X. Наши серверы в Финляндии и Эстонии дают минимальный пинг и максимальную скорость — до 800 Мбит/с.</p>
+<h3>Доступ к ChatGPT, Claude, Gemini и другим нейросетям</h3>
+<p>Большинство западных нейросетей заблокированы в России. С VPNUS VPN вы получаете доступ к ChatGPT от OpenAI, Claude от Anthropic, Google Gemini, Genspark, Banana и другим ИИ-сервисам. Работайте с нейросетями без ограничений.</p>
+<h3>Discord, Telegram, WhatsApp без блокировок</h3>
+<p>Общайтесь в Discord без ограничений, используйте Telegram даже при блокировках, звоните через WhatsApp и Zoom. VPNUS обеспечивает стабильное соединение для всех мессенджеров.</p>
+<h3>Игры без лагов: Roblox, Brawl Stars, PUBG</h3>
+<p>Играйте в заблокированные игры с низким пингом. Наши серверы оптимизированы для онлайн-игр — пинг до европейских серверов всего 40-60 мс. Roblox, Brawl Stars, PUBG, игры Supercell — всё работает без лагов.</p>
+<h3>Стриминговые сервисы: Netflix, Spotify, Gowo TV</h3>
+<p>Смотрите Netflix с американским каталогом, слушайте Spotify без ограничений, используйте Gowo TV. VPNUS разблокирует все стриминговые сервисы.</p>
+<h3>Безопасность в общественном Wi-Fi</h3>
+<p>VPNUS шифрует весь ваш трафик — даже в незащищенных сетях кафе, аэропортов и отелей. Ваши пароли, банковские данные и личная переписка остаются в безопасности.</p>
+<h3>Почему выбирают VPNUS</h3>
+<p><strong>7 дней бесплатно</strong> — протестируйте без ограничений до оплаты. <strong>199 ₽/мес</strong> — лучшая цена среди VPN с обфускацией. <strong>3 устройства</strong> — одна подписка на все ваши гаджеты. <strong>Русская поддержка 24/7</strong> — поможем с любым вопросом.</p>
+</div>
+</section>
+<section class="articles-section" id="articles">
+<h2>Полезные статьи о VPN</h2>
+<div class="articles-grid">
+<a class="article-card" href="/articles/top/luchshiy-vpn-dlya-android-2026/">
+<span class="tag">ТОП</span>
+<h3>Лучший VPN для Android 2026</h3>
+<p>5 проверенных VPN для Андроид с обфускацией, Kill Switch и высокой скоростью.</p>
+</a>
+<a class="article-card" href="/articles/top/luchshiy-vpn-dlya-iphone-2026/">
+<span class="tag">ТОП</span>
+<h3>Лучший VPN для iPhone 2026</h3>
+<p>Рейтинг VPN для iOS с поддержкой WireGuard и обходом блокировок.</p>
+</a>
+<a class="article-card" href="/articles/top/luchshiy-vpn-dlya-pk-2026/">
+<span class="tag">ТОП</span>
+<h3>Лучший VPN для ПК и Windows</h3>
+<p>Топ VPN для компьютера с системным Kill Switch и Split Tunneling.</p>
+</a>
+<a class="article-card" href="/articles/top/luchshiy-vpn-dlya-youtube-2026/">
+<span class="tag">ТОП</span>
+<h3>Лучший VPN для YouTube</h3>
+<p>VPN для просмотра YouTube в 4K без буферизации и ограничений.</p>
+</a>
+<a class="article-card" href="/articles/top/luchshiy-vpn-dlya-roblox-2026/">
+<span class="tag">ТОП</span>
+<h3>Лучший VPN для Roblox</h3>
+<p>Низкий пинг для игры в Roblox с VPN. Обход региональных блокировок.</p>
+</a>
+<a class="article-card" href="/articles/top/besplatnyy-vpn-2026/">
+<span class="tag">ТОП</span>
+<h3>Топ бесплатных VPN 2026</h3>
+<p>Бесплатные VPN с лимитом трафика: 10 ГБ, 3 ГБ и пробные периоды.</p>
+</a>
+<a class="article-card" href="/articles/obhod-belyh-spiskov/">
+<span class="tag">ГАЙД</span>
+<h3>Как обойти белые списки</h3>
+<p>Полное руководство по обходу белых списков Роскомнадзора в 2026 году.</p>
+</a>
+<a class="article-card" href="/articles/ne-rabotaet-mobilnyy-internet-vpn/">
+<span class="tag">ГАЙД</span>
+<h3>VPN не работает на мобильном</h3>
+<p>Почему VPN не работает на мобильном интернете и как это исправить.</p>
+</a>
+</div>
+</section>
+<footer>
+<div class="footer-container">
+<div class="footer-section">
+<h4>VPNUS VPN</h4>
+<a href="/">Главная</a>
+<a href="https://t.me/vpnusvpn_bot?start=invite_246079">Подключить VPN</a>
+<a href="/articles/top/">Все статьи</a>
+</div>
+<div class="footer-section">
+<h4>Топ VPN</h4>
+<a href="/articles/top/luchshiy-vpn-dlya-android-2026/">Для Android</a>
+<a href="/articles/top/luchshiy-vpn-dlya-iphone-2026/">Для iPhone</a>
+<a href="/articles/top/luchshiy-vpn-dlya-pk-2026/">Для ПК</a>
+<a href="/articles/top/besplatnyy-vpn-2026/">Бесплатные</a>
+</div>
+<div class="footer-section">
+<h4>Помощь</h4>
+<a href="/articles/obhod-belyh-spiskov/">Обход белых списков</a>
+<a href="/articles/ne-rabotaet-mobilnyy-internet-vpn/">Проблемы с мобильным</a>
+<a href="https://t.me/vpnusvpn_bot?start=invite_246079">Поддержка</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 VPNUS VPN. Все права защищены.</p>
+</div>
+</footer>
+</body>
+</html>

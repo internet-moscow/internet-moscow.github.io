@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Как обойти белые списки Роскомнадзора в 2026 — полное руководство</title>
+<meta content="Полное руководство по обходу белых списков Роскомнадзора в 2026 году. Какие VPN работают при белых списках, технологии обфускации, настройка." name="description"/>
+<meta content="белые списки, обход белых списков, VPN при белых списках, Роскомнадзор, обфускация, DPI, ТСПУ" name="keywords"/>
+<link href="https://internet-moscow.github.io/articles/obhod-belyh-spiskov/" rel="canonical"/>
+<meta content="article" property="og:type"/>
+<meta content="Как обойти белые списки Роскомнадзора в 2026" property="og:title"/>
+<meta content="Полное руководство по обходу белых списков. VPN с обфускацией." property="og:description"/>
+<meta content="https://internet-moscow.github.io/articles/obhod-belyh-spiskov/" property="og:url"/>
+<meta content="VPNUS VPN" property="og:site_name"/>
+<meta content="2026-03-16" property="article:published_time"/>
+<meta content="2026-03-16" property="article:modified_time"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Обход белых списков Роскомнадзора" name="twitter:title"/>
+<meta content="Как работает интернет при белых списках и какой VPN выбрать." name="twitter:description"/>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Как обойти белые списки Роскомнадзора в 2026 — полное руководство",
+      "description": "Полное руководство по обходу белых списков Роскомнадзора. VPN с обфускацией, технологии, настройка.",
+      "author": {"@type": "Organization", "name": "VPNUS"},
+      "publisher": {"@type": "Organization", "name": "VPNUS VPN"},
+      "datePublished": "2026-03-16",
+      "dateModified": "2026-03-16"
+    }
+    </script>
+<style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-card: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #6366f1;
+            --accent-hover: #818cf8;
+            --border: #2a2a2a;
+            --success: #22c55e;
+            --warning: #f59e0b;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        
+        header {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .logo span { color: var(--accent); }
+        
+        nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+        
+        nav a:hover { color: var(--text-primary); }
+        
+        .cta-button {
+            background: var(--accent);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .breadcrumbs {
+            max-width: 800px;
+            margin: 2rem auto 0;
+            padding: 0 2rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        
+        .breadcrumbs a { color: var(--text-secondary); text-decoration: none; }
+        .breadcrumbs a:hover { color: var(--accent); }
+        
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        article {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 3rem;
+            border: 1px solid var(--border);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .article-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        h2 {
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1rem;
+            color: var(--text-primary);
+        }
+        
+        h3 {
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem;
+            color: var(--text-primary);
+        }
+        
+        p {
+            margin-bottom: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        .quick-solution {
+            background: linear-gradient(135deg, var(--accent) 0%, #8b5cf6 100%);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            color: white;
+        }
+        
+        .quick-solution p {
+            color: rgba(255, 255, 255, 0.95);
+            margin: 0;
+        }
+        
+        .quick-solution a {
+            color: white;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        
+        .warning-box {
+            background: rgba(245, 158, 11, 0.1);
+            border-left: 4px solid var(--warning);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .warning-box p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        
+        .vpn-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+        }
+        
+        .vpn-card.best {
+            border: 2px solid var(--accent);
+            position: relative;
+        }
+        
+        .vpn-card.best::before {
+            content: "РЕКОМЕНДУЕМ";
+            position: absolute;
+            top: -12px;
+            left: 2rem;
+            background: var(--accent);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+        
+        .vpn-card h3 {
+            margin-top: 0.5rem;
+            font-size: 1.4rem;
+        }
+        
+        .official-link {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .price-tag {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--success);
+            margin: 1rem 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-primary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        table th, table td {
+            padding: 0.8rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        table th {
+            background: var(--bg-secondary);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.9rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        .btn:hover { background: var(--accent-hover); }
+        
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border: 1px solid var(--border);
+        }
+        
+        .faq-item h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h4 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section a {
+            display: block;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.3rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .footer-section a:hover { color: var(--accent); }
+        
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 768px) {
+            article { padding: 1.5rem; }
+            h1 { font-size: 1.7rem; }
+            nav { display: none; }
+        }
+    </style>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><meta content="#0a0a0a" name="theme-color"/><meta content="ru_RU" property="og:locale"/><meta content="https://internet-moscow.github.io/favicon-120.png" property="og:image"/><meta content="https://internet-moscow.github.io/favicon-120.png" name="twitter:image"/><link href="/favicon.svg" rel="icon" type="image/svg+xml"/><link href="/favicon.ico" rel="shortcut icon"/><link href="/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/><link href="/favicon-16.png" rel="icon" sizes="16x16" type="image/png"/><link href="/apple-touch-icon.png" rel="apple-touch-icon"/><link href="/site.webmanifest" rel="manifest"/><!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107722497', 'ym');
+
+    ym(107722497, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<!-- /Yandex.Metrika counter --></head>
+<body><!-- Yandex.Metrika counter (noscript) -->
+<noscript><div><img alt="" src="https://mc.yandex.ru/watch/107722497" style="position:absolute; left:-9999px;"/></div></noscript>
+<!-- /Yandex.Metrika counter (noscript) -->
+<header>
+<div class="header-container">
+<a class="logo" href="/">VPN<span>US</span></a>
+<nav>
+<a href="/">Главная</a>
+<a href="/articles/top/">Топ VPN</a>
+<a class="cta-button" href="https://t.me/vpnusvpn_bot?start=invite_246079">Подключить VPN</a>
+</nav>
+</div>
+</header>
+<nav class="breadcrumbs">
+<a href="/">Главная</a> / <span>Обход белых списков</span>
+</nav>
+<main class="article-container">
+<article>
+<h1>Как обойти белые списки Роскомнадзора в 2026 — полное руководство</h1>
+<div class="article-meta">
+                Обновлено: 16 марта 2026 | Автор: VPNUS Team
+            </div>
+<p>В 2026 году в некоторых регионах России начали тестировать «белые списки» — режим, при котором работают только разрешённые сайты, а всё остальное блокируется на уровне провайдера. Это самый жёсткий вид цензуры: обычные VPN часто не справляются, потому что их трафик тоже блокируется. В этой статье разберём, как работают белые списки, почему большинство VPN отваливаются, и какие сервисы реально работают.</p>
+<div class="quick-solution">
+<p>⚡️ Быстрое решение: нужен VPN, работающий при белых списках — <a href="https://t.me/vpnusvpn_bot?start=invite_246079">включить VPNUS VPN</a>. Обфускация маскирует трафик под обычный HTTPS, DPI не видит подключение. 7 дней бесплатно.</p>
+</div>
+<h2>Что такое белые списки и как они работают</h2>
+<p>Белые списки — это принципиально другой подход к фильтрации интернета:</p>
+<ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1.5rem;">
+<li><strong>Чёрные списки (классический Рунет):</strong> блокируются конкретные сайты из реестра Роскомнадзора, всё остальное работает</li>
+<li><strong>Белые списки:</strong> работают только разрешённые сайты, всё остальное блокируется по умолчанию</li>
+</ul>
+<p>При белых списках провайдер пропускает только трафик к IP-адресам из разрешённого списка. Всё остальное — включая серверы обычных VPN — блокируется на уровне маршрутизации. Это делает бесполезными большинство VPN-сервисов, даже если они используют стандартную обфускацию.</p>
+<h2>Почему обычные VPN не работают при белых списках</h2>
+<p>Стандартные VPN-протоколы легко распознать и заблокировать:</p>
+<ul style="color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 1.5rem;">
+<li><strong>OpenVPN</strong> — имеет характерную сигнатуру в заголовках пакетов</li>
+<li><strong>IKEv2/IPSec</strong> — использует фиксированные порты, легко блокируется</li>
+<li><strong>Стандартный WireGuard</strong> — UDP-пакеты с характерной структурой</li>
+<li><strong>L2TP/PPTP</strong> — устаревшие протоколы, блокируются везде</li>
+</ul>
+<p>Даже если VPN использует порт 443 (HTTPS), DPI-системы анализируют паттерны трафика и распознают VPN-подключение по размеру пакетов, временным интервалам и другим признакам.</p>
+<h2>Какие технологии работают при белых списках</h2>
+<h3>1. Обфускация (Obfuscation)</h3>
+<p>Технология, которая маскирует VPN-трафик под обычный HTTPS. Пакеты модифицируются, чтобы выглядеть как обычный веб-трафик — с хаотичными размерами, правдоподобными временными интервалами, TLS-заголовками. DPI видит обычное HTTPS-подключение и не блокирует его.</p>
+<h3>2. Shadowsocks + плагины</h3>
+<p>Прокси-протокол с различными плагинами маскировки (v2ray-plugin, simple-obfs). Трафик выглядит как обычный HTTP/HTTPS, проходит через белые списки.</p>
+<h3>3. VLESS + XTLS-Reality</h3>
+<p>Современный протокол с имитацией трафика популярных сайтов (Facebook, Google, Apple). Сервер «притворяется» настоящим сайтом из белого списка.</p>
+<h3>4. Trojan-GFW</h3>
+<p>Протокол, который маскирует трафик под обычный HTTPS. Если кто-то попытается открыть адрес сервера в браузере — увидит обычный сайт-заглушку.</p>
+<h2>VPN, которые работают при белых списках</h2>
+<div class="vpn-card best">
+<h3>VPNUS VPN — лучший выбор для белых списков</h3>
+<span class="official-link">Официальный сайт: <a href="https://t.me/vpnusvpn_bot?start=invite_246079">VPNUS VPN — 7 дней бесплатно</a></span>
+<p>Построен специально под российские реалии. Использует WireGuard с обфускацией — трафик выглядит как обычный HTTPS, проходит через любые фильтры. Работает даже в регионах с тестовыми белыми списками.</p>
+<div class="price-tag">199 ₽/мес (3 устройства)</div>
+<table>
+<tr><th>Параметр</th><th>Значение</th></tr>
+<tr><td>Протокол</td><td>WireGuard + обфускация</td></tr>
+<tr><td>Работает при белых списках</td><td>✅ Да</td></tr>
+<tr><td>Технология</td><td>Маскировка под HTTPS</td></tr>
+<tr><td>Скорость</td><td>До 800 Мбит/с</td></tr>
+<tr><td>Серверы</td><td>50+ в 15 странах</td></tr>
+<tr><td>Пробный период</td><td>7 дней бесплатно</td></tr>
+</table>
+<a class="btn" href="https://t.me/vpnusvpn_bot?start=invite_246079">➡️ VPNUS VPN — 7 дней бесплатно</a>
+</div>
+<div class="vpn-card">
+<h3>Норм VPN — бюджетная альтернатива</h3>
+<span class="official-link">Официальный сайт: <a href="https://t.me/normwpn_bot?start=partner_228691787">Норм VPN за 149 ₽</a></span>
+<p>Тот же уровень защиты, что у VPNUS, но дешевле и на одно устройство. Обфускация работает идентично, проходит белые списки без проблем.</p>
+<div class="price-tag">149 ₽/мес (1 устройство)</div>
+<a class="btn" href="https://t.me/normwpn_bot?start=partner_228691787">➡️ Норм VPN с 3 днями бесплатно</a>
+</div>
+<div class="vpn-card">
+<h3>ZoogVPN — с технологией ZoogShadow</h3>
+<span class="official-link">Официальный сайт: <a href="https://zoogvpn.com/?utm_source=zoog_affiliate&amp;utm_medium=revshare&amp;utm_campaign=aff69a94e77a1ddb&amp;a_aid=69a94e77a1ddb">ZoogVPN — 10 ГБ бесплатно</a></span>
+<p>Собственная технология ZoogShadow для обхода DPI и белых списков. 10 ГБ бесплатно каждый месяц — достаточно для базовых задач.</p>
+<div class="price-tag">10 ГБ/мес бесплатно или от 300 ₽/мес</div>
+<a class="btn" href="https://zoogvpn.com/?utm_source=zoog_affiliate&amp;utm_medium=revshare&amp;utm_campaign=aff69a94e77a1ddb&amp;a_aid=69a94e77a1ddb">➡️ ZoogVPN — 10 ГБ бесплатно</a>
+</div>
+<h2>Как проверить, работает ли VPN при белых списках</h2>
+<ol style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 2; margin-bottom: 1.5rem;">
+<li>Подключитесь к VPN</li>
+<li>Откройте сайт 2ip.ru или whoer.net</li>
+<li>Проверьте, что IP изменился на IP сервера VPN</li>
+<li>Попробуйте открыть заблокированные сайты (YouTube, TikTok, Instagram)</li>
+<li>Если всё открывается — VPN работает</li>
+<li>Если ничего не открывается (даже разрешённые сайты) — VPN заблокирован</li>
+</ol>
+<h2>Что делать, если VPN перестал работать</h2>
+<div class="warning-box">
+<p><strong>Важно:</strong> Если ваш текущий VPN перестал работать, не паникуйте. Попробуйте другие серверы, протоколы или переключитесь на VPN с обфускацией.</p>
+</div>
+<ol style="color: var(--text-secondary); padding-left: 1.5rem; line-height: 2; margin-bottom: 1.5rem;">
+<li><strong>Переключитесь на сервер с обфускацией</strong> — в названии обычно есть «obfs», «Shadow», «Stealth»</li>
+<li><strong>Смените протокол</strong> — попробуйте TCP вместо UDP, или наоборот</li>
+<li><strong>Смените порт</strong> — попробуйте 443, 80, 8080</li>
+<li><strong>Используйте Shadowsocks</strong> — если ваш VPN его поддерживает</li>
+<li><strong>Переходите на VPNUS или Норм VPN</strong> — гарантированно работают при белых списках</li>
+</ol>
+<h2>FAQ — частые вопросы про белые списки</h2>
+<div class="faq-item">
+<h4>Белые списки уже внедрены в России?</h4>
+<p>Пока тестируются в отдельных регионах. Но тенденция очевидна — система цензуры ужесточается. Лучше подготовиться заранее и выбрать VPN с обфускацией.</p>
+</div>
+<div class="faq-item">
+<h4>Бесплатные VPN работают при белых списках?</h4>
+<p>Практически никакие. Бесплатные VPN используют стандартные протоколы без обфускации — их трафик легко распознать и заблокировать. Из бесплатных работает только <a href="https://zoogvpn.com/?utm_source=zoog_affiliate&amp;utm_medium=revshare&amp;utm_campaign=aff69a94e77a1ddb&amp;a_aid=69a94e77a1ddb">ZoogVPN</a> с ZoogShadow.</p>
+</div>
+<div class="faq-item">
+<h4>Можно ли обойти белые списки без VPN?</h4>
+<p>Теоретически — через Tor с мостами, Shadowsocks, VLESS. Но это сложно настраивать и низкая скорость. VPN с обфускацией — оптимальный баланс простоты и эффективности.</p>
+</div>
+<div class="faq-item">
+<h4>Какой VPN выбрать для белых списков?</h4>
+<p>Рекомендуем <a href="https://t.me/vpnusvpn_bot?start=invite_246079">VPNUS VPN</a> — построен специально под российские реалии, 7 дней бесплатно для теста. Если нужно дешевле — <a href="https://t.me/normwpn_bot?start=partner_228691787">Норм VPN за 149 ₽</a>.</p>
+</div>
+<h2>Вывод</h2>
+<p>Белые списки — серьёзное испытание для VPN, но не приговор. Главное — выбрать сервис с качественной обфускацией, которая маскирует трафик под обычный HTTPS. <a href="https://t.me/vpnusvpn_bot?start=invite_246079">VPNUS VPN</a> и <a href="https://t.me/normwpn_bot?start=partner_228691787">Норм VPN</a> гарантированно работают даже при самых жёстких ограничениях — проверьте сами с бесплатным пробным периодом.</p>
+<section class="related-links" style="margin-top:2.5rem;padding:1.5rem;border:1px solid var(--border, #2a2a2a);border-radius:16px;background:rgba(99,102,241,0.06)"><h2 style="margin-top:0">Читайте также</h2><ul style="padding-left:1.2rem;line-height:1.9"><li><a href="/articles/top/">Топ VPN 2026</a></li><li><a href="/articles/ne-rabotaet-mobilnyy-internet-vpn/">VPN не работает на мобильном интернете</a></li><li><a href="/articles/top/luchshiy-vpn-dlya-youtube-2026/">Лучший VPN для YouTube</a></li><li><a href="/articles/top/luchshiy-vpn-dlya-iphone-2026/">VPN для iPhone 2026</a></li></ul></section></article>
+</main>
+<footer>
+<div class="footer-container">
+<div class="footer-section">
+<h4>VPNUS VPN</h4>
+<a href="/">Главная</a>
+<a href="https://t.me/vpnusvpn_bot?start=invite_246079">Подключить VPN</a>
+<a href="/articles/top/">Все статьи</a>
+</div>
+<div class="footer-section">
+<h4>Топ VPN</h4>
+<a href="/articles/top/luchshiy-vpn-dlya-android-2026/">Для Android</a>
+<a href="/articles/top/luchshiy-vpn-dlya-iphone-2026/">Для iPhone</a>
+<a href="/articles/top/luchshiy-vpn-dlya-pk-2026/">Для ПК</a>
+<a href="/articles/top/besplatnyy-vpn-2026/">Бесплатные</a>
+</div>
+<div class="footer-section">
+<h4>Помощь</h4>
+<a href="/articles/obhod-belyh-spiskov/">Обход белых списков</a>
+<a href="/articles/ne-rabotaet-mobilnyy-internet-vpn/">Проблемы с мобильным</a>
+<a href="https://t.me/vpnusvpn_bot?start=invite_246079">Поддержка</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 VPNUS VPN. Все права защищены.</p>
+</div>
+</footer>
+</body>
+</html>
